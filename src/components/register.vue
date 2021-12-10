@@ -35,15 +35,14 @@
 
 
         <el-form-item>
-          <el-button type="primary" @click="onSubmit" style="width: 100%">立即登录</el-button>
+          <el-button type="primary" @click="onSubmit" style="width: 100%">立即注册</el-button>
         </el-form-item>
       </el-form>
       <el-row >
         <el-col :span="24" class="kepp-right"> <el-divider></el-divider></el-col>
         <el-col :span="24" class="size kepp-right" >
-          <router-link :underline="false" :to="{path:'/null'}" > 忘记密码? </router-link>
           <el-divider direction="vertical"></el-divider>
-          <router-link :underline="false" :to="{path:'/register'}" >注册新用户</router-link>
+          <router-link :underline="false" :to="{path:'/login'}" >已有账号?</router-link>
         </el-col>
       </el-row>
 

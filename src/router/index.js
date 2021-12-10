@@ -1,11 +1,14 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
-import Register from "../components/Login"
 import Header from "../components/Header"
+import Login from "../components/Login"
+import Register from "../components/Register"
+
 
 Vue.use(Router)
 
+//创建路由器
 export default new Router({
   routes: [
     {
@@ -14,7 +17,12 @@ export default new Router({
       component: HelloWorld
     },
     {
-      path: '/',
+      path: '/login',
+      name: 'Login',
+      component: Login
+    },
+    {
+      path: '/register',
       name: 'register',
       component: Register
     },
