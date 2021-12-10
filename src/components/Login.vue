@@ -56,7 +56,7 @@
 
 <script>
 import Header from "./Header";
-import "@/css/Register.css"
+import "@/css/Login.css"
 export default {
   name: "Register",
   components: {Header},
