@@ -56,6 +56,7 @@
 
 <script>
 import Header from "./Header";
+import "@/css/Register.css"
 export default {
   name: "Register",
   components: {Header},
@@ -83,42 +84,5 @@ export default {
 </script>
 
 <style scoped>
-body{text-align:center}
-div{
-    border: 0px gray solid;
-  }
-  a{
-    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
-  }
-  .kepp-right{
-    text-align: right;
-  }
-  .keep-left{
-    text-align: left;
-  }
-  .center{
-    text-align: center;
-  }
-
-  .size{
-    font-size: 10px;
-  }
-
-.maindiv{
-    width: 440px;
-    height: 300px;
-    margin: 20px auto;
-    padding:70px;
-    transition: all 0.65s;
-    border-radius: 10px;
-  -webkit-box-shadow: 2px 2px 8px 1px rgba(20, 20, 20, 0.15);
-  -moz-box-shadow: 2px 2px 8px 1px rgba(20, 20, 20, 0.15);
-  box-shadow: 2px 2px 8px 1px rgba(20, 20, 20, 0.15);
-
-   }
-.maindiv:hover {
-  box-shadow: 2px 2px 10px #909090;
-  }
-
 
 </style>
