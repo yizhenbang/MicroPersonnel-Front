@@ -42,7 +42,7 @@
         <el-col :span="24" class="kepp-right"> <el-divider></el-divider></el-col>
         <el-col :span="24" class="size kepp-right" >
           <el-divider direction="vertical"></el-divider>
-          <router-link :underline="false" :to="{path:'/login'}" >已有账号?</router-link>
+          <router-link :underline="false" to="/" >已有账号?</router-link>
         </el-col>
       </el-row>
 
@@ -89,3 +89,4 @@ export default {
 <style scoped>
 
 </style>
+

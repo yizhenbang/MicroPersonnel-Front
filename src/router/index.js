@@ -11,26 +11,9 @@ Vue.use(Router)
 //创建路由器
 export default new Router({
   routes: [
-    {
-      path: '/hello',
-      name: 'HelloWorld',
-      component: HelloWorld
-    },
-    {
-      path: '/login',
-      name: 'Login',
-      component: Login
-    },
-    {
-      path: '/register',
-      name: 'register',
-      component: Register
-    },
-    {
-      path: '/',
-      name: 'Header',
-      component: Header
-    }
-
+    {path: '/hello',name: 'HelloWorld', component: HelloWorld},
+    {path: '/',name:"login",component: Login},
+    {path: '/register',component: Register},
+    {path: '/header',component: Header}
   ]
 })

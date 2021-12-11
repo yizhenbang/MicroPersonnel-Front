@@ -67,10 +67,11 @@ export default {
   data(){
     return {
       User: {
-        userName:"",
-        userPassword:"",
-        code:""
-      }
+        u_id:"",
+        user_Name:"",
+        user_Password:"",
+      },
+      code:""
     }
   },
   methods:{
@@ -79,14 +80,22 @@ export default {
       if(this.User.userName === null || this.User.userName === "") {alert("请填写账号"); return false;}
       if(this.User.userPassword === null || this.User.userPassword === "") {alert("请填写密码"); return false;}
       if(this.User.code === null || this.User.code === "") {alert("请填写验证码"); return false;}
+
+      this.onclick();
     },
-    error(e){
-      alert("验证码加载失败"+e);
+    onclick(){
+      /*axios.create({
+        baseURL:"",//请求父路径
+        url:"", //请求路径
+        method:"post",
+        data: {//用于发送请求参数
+           User:this.User
+        },
+        responseType: 'json',//返回参数格式
+      });*/
+
+      }
     }
-  }
+
 }
 </script>
-
-<style scoped>
-
-</style>
