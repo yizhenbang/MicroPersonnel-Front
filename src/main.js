@@ -7,6 +7,11 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import App from './App'
 import router from './router'
+import axios from "axios"
+//全局的注册属性
+import register_property from "./api/register_property";
+
+Vue.prototype.UserProperty = register_property
 
 Vue.config.productionTip = false
 Vue.use(router)
@@ -15,7 +20,7 @@ Vue.use(ElementUI)
 
 new Vue({
   el: '#app',
-  router:router,
+  router: router,
   /*components: { App },
   template: '<App/>'*/
   render: h => h(App)

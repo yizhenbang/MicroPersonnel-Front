@@ -1,0 +1,22 @@
+/*提供给注册页面以及祖册页面的所有子组件所需要使用到的属性*/
+const personnelInfo = {}
+
+personnelInfo.personnelName = "";
+personnelInfo.personnelPassword = "";
+personnelInfo.personnelAge = 0;
+personnelInfo.personnelGender = "";
+personnelInfo.height = "";
+personnelInfo.weight = "";
+personnelInfo.address = "";
+personnelInfo.tel = "";
+personnelInfo.email = "";
+personnelInfo.birthday = "";
+personnelInfo.portrait = "";
+personnelInfo.Id_number = "";
+
+const code = "";
+
+export default {
+    personnelInfo,
+    code
+};

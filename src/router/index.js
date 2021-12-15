@@ -13,7 +13,7 @@ export default new Router({
   routes: [
     {path: '/hello',name: 'HelloWorld', component: HelloWorld},
     {path: '/',name:"login",component: Login},
-    {path: '/register',component: Register},
+    {path: '/register',name:"register",component: Register},
     {path: '/header',component: Header}
   ]
 })
